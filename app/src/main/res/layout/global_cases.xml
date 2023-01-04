@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingConstraints"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/light_green"
+        app:cardCornerRadius="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:id="@+id/constrain_label"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/NewConfirmedlable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                android:text="@string/new_confirmed"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/TotalConfirmedlable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                android:text="@string/total_confirmed"
+                app:layout_constraintTop_toBottomOf="@id/NewConfirmedlable"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/NewDeathslable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                android:text="@string/new_deaths"
+                app:layout_constraintTop_toBottomOf="@id/TotalConfirmedlable"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TotalDeathslable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                android:text="@string/total_deaths"
+                app:layout_constraintTop_toBottomOf="@id/NewDeathslable"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TotalRecoveredlable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                android:text="@string/total_recovered"
+                app:layout_constraintTop_toBottomOf="@id/TotalDeathslable"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintLeft_toRightOf="@+id/constrain_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/NewConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                android:text="58"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/TotalConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                android:text="58"
+                app:layout_constraintTop_toBottomOf="@id/NewConfirmed"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/NewDeaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                android:text="58"
+                app:layout_constraintTop_toBottomOf="@id/TotalConfirmed"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TotalDeaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                android:text="58"
+                app:layout_constraintTop_toBottomOf="@id/NewDeaths"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TotalRecovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                android:text="58"
+                app:layout_constraintTop_toBottomOf="@id/TotalDeaths"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

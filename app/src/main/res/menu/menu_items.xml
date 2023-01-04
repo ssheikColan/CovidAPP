@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/firstItem"
+        android:title="@string/dashboard" />
+    <item
+        android:id="@+id/thirdItem"
+        android:title="@string/stack" />
+    <item
+        android:id="@+id/fourItem"
+        android:title="@string/logout" />
+
+</menu>

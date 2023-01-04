@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvCountry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    tools:ignore="MissingConstraints"
+    android:layout_margin="10dp"
+  >
+
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:shape="ring"
+            app:cardCornerRadius="36dp"
+          >
+
+            <ImageView
+                android:id="@+id/ivCountryPoster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                tools:src="@drawable/cases"
+                android:contentDescription="@string/poster" />
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/light_green"
+
+        app:cardCornerRadius="10dp"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/tvCountryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_l"
+                tools:text="Turkey"
+                tools:ignore="MissingConstraints"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/NewConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                tools:text="58"
+                app:layout_constraintTop_toBottomOf="@id/tvCountryName"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/TotalConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                tools:text="58"
+                app:layout_constraintTop_toBottomOf="@id/NewConfirmed"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/NewDeaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                tools:text="58"
+                app:layout_constraintTop_toBottomOf="@id/TotalConfirmed"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TotalDeaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                tools:text="58"
+                app:layout_constraintTop_toBottomOf="@id/NewDeaths"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TotalRecovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/text_size_l"
+                tools:text="58"
+                app:layout_constraintTop_toBottomOf="@id/TotalDeaths"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    tools:context=".LoginActivity">
+
+
+
+  <ImageView
+      android:id="@+id/login_logo"
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:src="@drawable/login"
+      tools:ignore="MissingConstraints"></ImageView>
+
+  <TextView
+      android:id="@+id/title_login"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/login"
+      android:textStyle="bold"
+      android:textSize="@dimen/text_size_x_jumbo"
+      android:textColor="@color/black"
+      tools:ignore="MissingConstraints"
+     app:layout_constraintTop_toBottomOf="@id/login_logo"
+      android:paddingLeft="30dp"
+      android:paddingBottom="@dimen/text_size_s"
+     />
+
+
+  <EditText
+      android:id="@+id/email_edit"
+      android:hint="@string/email"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/text_height_xl"
+      app:layout_constraintTop_toBottomOf="@id/title_login"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:textColor="@color/black"
+      android:background="@drawable/edit_text_background"
+      android:layout_margin="@dimen/text_size_xxl"
+      android:paddingLeft="@dimen/text_size_s"
+      android:drawableStart="@drawable/user_icon"
+      android:drawablePadding="@dimen/text_size_s"
+      android:inputType="textEmailAddress"
+      />
+
+
+  <EditText
+      android:id="@+id/password_edit"
+      android:hint="@string/password"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/text_height_xl"
+      app:layout_constraintTop_toBottomOf="@id/email_edit"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:textColor="@color/black"
+      android:background="@drawable/edit_text_background"
+      android:layout_margin="@dimen/text_size_xxl"
+      android:paddingLeft="@dimen/text_size_s"
+      android:drawableStart="@drawable/lock_icon"
+      android:drawablePadding="@dimen/text_size_s"
+      android:inputType="textPassword"
+      />
+
+  <TextView
+      android:visibility="gone"
+      android:id="@+id/forgot_txt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/forgot"
+      android:textColor="@color/black"
+      app:layout_constraintTop_toBottomOf="@id/password_edit"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginRight="@dimen/text_height"
+      android:layout_marginTop="@dimen/text_size_x_jumbo"
+      />
+
+  <Button
+      android:id="@+id/login_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/login"
+      app:layout_constraintTop_toBottomOf="@id/forgot_txt"
+      android:background="@drawable/button_background"
+      android:layout_margin="@dimen/space_jumbo"
+      />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginBottom="@dimen/text_height"
+      >
+  <TextView
+      android:id="@+id/txt1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/colorTextBlack"
+      android:textSize="18dp"
+      android:text="Don't have an account?"
+      android:layout_marginLeft="12dp"
+
+      />
+  <TextView
+      android:id="@+id/register_link"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/colorTextPrimary"
+      android:textSize="18dp"
+      android:text="Register instead"
+      android:layout_marginLeft="12dp"
+      app:layout_constraintLeft_toRightOf="@id/txt1"
+
+      />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
